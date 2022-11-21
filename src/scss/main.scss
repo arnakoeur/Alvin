@@ -1,0 +1,78 @@
+/* ====================================
+// css variables
+// ==================================== */
+@import "bootstrap/scss/bootstrap-grid";
+
+:root {
+}
+
+/* ====================================
+// reset rules
+// ==================================== */
+
+@font-face {
+  font-family: 'helvetica-neue';
+  src:  url(/src/HelveticaNeue-01.woff2) format('woff2')
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+video {
+  max-inline-size: 100%;
+  block-size: auto;
+  vertical-align: middle;
+}
+
+header {
+  background-color: black;
+}
+
+.in-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.out-header {
+  padding: 40px 0px;
+}
+
+.logo-grand {
+  width: 100%;
+}
+
+.bg-img {
+  background-image: url(../img/bar-alvin-photo.webp)
+}
+
+.intro {
+  color: white;
+  font-size: 16px;
+  font-family: helvetica-neue;
+}
+/* ====================================
+// base rules
+// ==================================== */
