@@ -65,13 +65,73 @@ header {
 }
 
 .bg-img {
-  background-image: url(../img/bar-alvin-photo.webp)
+  background-image: url(../img/bar-alvin-photo.webp);
+  background-color: black;
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .intro {
   color: white;
   font-size: 16px;
   font-family: helvetica-neue;
+}
+
+.intro-title {
+  font-size: 10px;
+  font-family: helvetica-neue;
+  color: white;
+  font-weight: 600;
+  opacity: 47%;
+}
+
+.philosophy-intro {
+  padding: 40px 15px;
+}
+
+.events {
+  background-color: black;
+}
+
+.events-article {
+  color: white;
+  font-family: helvetica-neue;
+  padding-bottom: 40px;
+}
+
+.event-title {
+  color: white;
+  font-family: helvetica-neue;
+  font-weight: 600;
+  font-size: 48px;
+  padding: 36px 0px 22px 0px;
+}
+
+.date-title {
+  font-family: helvetica-neue;
+  color: white;
+  opacity: 30%;
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 12px;
+}
+
+.event-card-title {
+  font-family: helvetica-neue;
+  color: white;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.event-card-text {
+  font-family: helvetica-neue;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  padding-top: 8px;
 }
 /* ====================================
 // base rules

@@ -5050,13 +5050,74 @@ header {
 }
 
 .bg-img {
+  background-color: #000;
   background-image: url("bar-alvin-photo.66a3793a.webp");
+}
+
+.bg-blur {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  width: 100%;
 }
 
 .intro {
   color: #fff;
   font-family: helvetica-neue;
   font-size: 16px;
+}
+
+.intro-title {
+  color: #fff;
+  opacity: .47;
+  font-family: helvetica-neue;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.philosophy-intro {
+  padding: 40px 15px;
+}
+
+.events {
+  background-color: #000;
+}
+
+.events-article {
+  color: #fff;
+  padding-bottom: 40px;
+  font-family: helvetica-neue;
+}
+
+.event-title {
+  color: #fff;
+  padding: 36px 0 22px;
+  font-family: helvetica-neue;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.date-title {
+  color: #fff;
+  opacity: .3;
+  padding-top: 12px;
+  font-family: helvetica-neue;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.event-card-title {
+  color: #fff;
+  font-family: helvetica-neue;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.event-card-text {
+  color: #fff;
+  padding-top: 8px;
+  font-family: helvetica-neue;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=index.b10d73a7.css.map */
