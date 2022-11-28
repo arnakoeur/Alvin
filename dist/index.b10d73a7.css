@@ -5140,6 +5140,8 @@ nav a:hover {
 
 .btn-events-btm {
   text-align: center;
+  padding-top: 28px;
+  padding-bottom: 60px;
 }
 
 .btn-events-btm a {
@@ -5185,6 +5187,7 @@ nav a:hover {
   }
 
   .event-title {
+    padding: 68px 0;
     font-size: 93px;
   }
 
@@ -5198,6 +5201,11 @@ nav a:hover {
 
   .event-card-text {
     font-size: 28px;
+  }
+
+  .btn-events-btm {
+    padding-top: 49px;
+    padding-bottom: 60px;
   }
 
   .btn-events-btm a {

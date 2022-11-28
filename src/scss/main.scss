@@ -154,6 +154,8 @@ nav {
 
 .btn-events-btm {
   text-align: center;
+  padding-top: 28px;
+  padding-bottom: 60px;
   
   a {
     border: solid 1px white;
@@ -176,8 +178,6 @@ nav {
     flex-shrink: 0;
   }
 }
-
-
 
 /* ====================================
 // base rules
@@ -210,6 +210,7 @@ nav {
 
   .event-title {
     font-size: 93px;
+    padding: 68px 0px 68px 0px;
   }
 
   .date-title {
@@ -222,6 +223,11 @@ nav {
 
   .event-card-text {
     font-size: 28px;
+  }
+
+  .btn-events-btm {
+    padding-top: 49px;
+    padding-bottom: 60px;
   }
 
   .btn-events-btm a {
