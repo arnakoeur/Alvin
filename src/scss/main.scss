@@ -133,6 +133,110 @@ header {
   font-weight: 400;
   padding-top: 8px;
 }
+
+nav {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: helvetica-neue;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.btn-events-btm {
+  text-align: center;
+  
+  a {
+    border: solid 1px white;
+    display: inline-flex;
+    color: white;
+    font-family: helvetica-neue;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 6px 16px;
+  }
+
+  img {
+    max-width: 17px;
+    margin-right: 16px;
+    margin-left: 12px;
+  }
+
+  span {
+    flex-shrink: 0;
+  }
+}
+
+
+
 /* ====================================
 // base rules
 // ==================================== */
+
+@media screen and (min-width: 769px) {
+  .intro {
+    font-size: 45px;
+  }
+  
+  .intro-title {
+    font-size: 20px;
+  }
+  
+  .philosophy-intro {
+    padding: 168px 0px;
+  }
+  
+  .small-header-logo {
+    display: none;
+  }
+  
+  .small-header-burger {
+    display: none;
+  }
+  
+  .in-header {
+    display: block;
+  }
+
+  .event-title {
+    font-size: 93px;
+  }
+
+  .date-title {
+    font-size: 26px;
+  }
+
+  .event-card-title {
+    font-size: 45px;
+  }
+
+  .event-card-text {
+    font-size: 28px;
+  }
+
+  .btn-events-btm a {
+    font-size: 31px;
+    border: solid 3px white;
+  }
+
+  .btn-events-btm img {
+    max-width: 31px;
+    margin: 0px 33px 0px 21px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
+  }
+}
