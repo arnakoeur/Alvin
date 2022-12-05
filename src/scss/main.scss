@@ -15,6 +15,16 @@
   src:  url(/src/HelveticaNeue-01.woff2) format('woff2')
 }
 
+@font-face {
+  font-family: 'helvetica-neue-light';
+  src:  url(/src/HelveticaNeue-Light-08.woff2) format('woff2')
+}
+
+@font-face {
+  font-family: 'fa-sharp';
+  src:  url(/src/fa-sharp-solid-900.woff2) format('woff2')
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -47,6 +57,10 @@ video {
 
 header {
   background-color: black;
+  border-bottom: solid 1px white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .in-header {
@@ -110,6 +124,47 @@ header {
   padding: 36px 0px 22px 0px;
 }
 
+.cocktail-title {
+  font-family: helvetica-neue;
+  font-weight: 600;
+  font-size: 48px;
+  padding: 36px 0px 22px 0px;
+}
+
+.cocktail-intro {
+  color: black;
+  font-size: 22px;
+  font-family: helvetica-neue;
+  padding-bottom: 37px;
+}
+
+.cocktail-title-menu {
+  font-family: helvetica-neue;
+  font-weight: 600;
+  font-size: 43px;
+  padding: 15px 0px 6px 0px;
+}
+
+.cocktail-description {
+  color: black;
+  font-size: 22px;
+  font-family: helvetica-neue-light;
+  padding-bottom: 90px;
+}
+
+.cocktails {
+  border-top: solid 3px black;
+}
+
+.cocktail-price {
+  text-align: right;
+  color: black;
+  font-size: 22px;
+  font-family: helvetica-neue-light;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+
 .date-title {
   font-family: helvetica-neue;
   color: white;
@@ -132,6 +187,10 @@ header {
   font-size: 17px;
   font-weight: 400;
   padding-top: 8px;
+}
+
+.icons {
+  font-family: fa-sharp;
 }
 
 nav {
@@ -168,15 +227,40 @@ nav {
     padding: 6px 16px;
   }
 
-  img {
-    max-width: 17px;
-    margin-right: 16px;
-    margin-left: 12px;
+  span {
+    padding-left: 12px;
+  }
+}
+
+.btn-cocktail-btm {
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 60px;
+  
+  a {
+    border: solid 1px black;
+    display: inline-flex;
+    color: black;
+    font-family: helvetica-neue;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 6px 16px;
   }
 
   span {
-    flex-shrink: 0;
+    padding-left: 12px;
   }
+}
+
+.btn-events-btm a:hover {
+  border-color: red;
+  background-color: red;
+}
+
+.btn-cocktail-btm a:hover {
+  border-color: red;
+  background-color: red;
 }
 
 /* ====================================
@@ -213,6 +297,11 @@ nav {
     padding: 68px 0px 68px 0px;
   }
 
+  .cocktail-title {
+    font-size: 93px;
+    padding: 68px 0px 16px 0px;
+  }
+
   .date-title {
     font-size: 26px;
   }
@@ -230,6 +319,16 @@ nav {
     padding-bottom: 60px;
   }
 
+  .btn-cocktail-btm a:hover {
+    border-color: red;
+    background-color: red;
+    color: white;
+  }
+
+  .btn-cocktail-btm img:hover {
+    display: none;
+  }
+
   .btn-events-btm a {
     font-size: 31px;
     border: solid 3px white;
@@ -238,6 +337,21 @@ nav {
   .btn-events-btm img {
     max-width: 31px;
     margin: 0px 33px 0px 21px;
+  }
+
+  .btn-cocktail-btm {
+    padding-top: 49px;
+    padding-bottom: 60px;
+  }
+
+  .btn-cocktail-btm a {
+    font-size: 31px;
+    border: solid 3px black;
+  }
+
+  .btn-cocktail-btm img {
+    max-width: 31px;
+    margin: 0px 33px 0px 21px
   }
 }
 

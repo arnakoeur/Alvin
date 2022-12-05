@@ -5002,6 +5002,16 @@
   src: url("HelveticaNeue-01.40b5b195.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: helvetica-neue-light;
+  src: url("HelveticaNeue-Light-08.af0ecdfb.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: fa-sharp;
+  src: url("fa-sharp-solid-900.f8f2f098.woff2") format("woff2");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5031,7 +5041,11 @@ img, video {
 }
 
 header {
+  z-index: 1000;
   background-color: #000;
+  border-bottom: 1px solid #fff;
+  position: sticky;
+  top: 0;
 }
 
 .in-header {
@@ -5096,6 +5110,47 @@ header {
   font-weight: 600;
 }
 
+.cocktail-title {
+  padding: 36px 0 22px;
+  font-family: helvetica-neue;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.cocktail-intro {
+  color: #000;
+  padding-bottom: 37px;
+  font-family: helvetica-neue;
+  font-size: 22px;
+}
+
+.cocktail-title-menu {
+  padding: 15px 0 6px;
+  font-family: helvetica-neue;
+  font-size: 43px;
+  font-weight: 600;
+}
+
+.cocktail-description {
+  color: #000;
+  padding-bottom: 90px;
+  font-family: helvetica-neue-light;
+  font-size: 22px;
+}
+
+.cocktails {
+  border-top: 3px solid #000;
+}
+
+.cocktail-price {
+  text-align: right;
+  color: #000;
+  padding-bottom: 10px;
+  font-family: helvetica-neue-light;
+  font-size: 22px;
+  font-style: italic;
+}
+
 .date-title {
   color: #fff;
   opacity: .3;
@@ -5118,6 +5173,10 @@ header {
   font-family: helvetica-neue;
   font-size: 17px;
   font-weight: 400;
+}
+
+.icons {
+  font-family: fa-sharp;
 }
 
 nav {
@@ -5155,14 +5214,34 @@ nav a:hover {
   display: inline-flex;
 }
 
-.btn-events-btm img {
-  max-width: 17px;
-  margin-left: 12px;
-  margin-right: 16px;
+.btn-events-btm span {
+  padding-left: 12px;
 }
 
-.btn-events-btm span {
-  flex-shrink: 0;
+.btn-cocktail-btm {
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 60px;
+}
+
+.btn-cocktail-btm a {
+  color: #000;
+  border: 1px solid #000;
+  padding: 6px 16px;
+  font-family: helvetica-neue;
+  font-size: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  display: inline-flex;
+}
+
+.btn-cocktail-btm span {
+  padding-left: 12px;
+}
+
+.btn-events-btm a:hover, .btn-cocktail-btm a:hover {
+  background-color: red;
+  border-color: red;
 }
 
 @media screen and (min-width: 769px) {
@@ -5191,6 +5270,11 @@ nav a:hover {
     font-size: 93px;
   }
 
+  .cocktail-title {
+    padding: 68px 0 16px;
+    font-size: 93px;
+  }
+
   .date-title {
     font-size: 26px;
   }
@@ -5208,12 +5292,37 @@ nav a:hover {
     padding-bottom: 60px;
   }
 
+  .btn-cocktail-btm a:hover {
+    color: #fff;
+    background-color: red;
+    border-color: red;
+  }
+
+  .btn-cocktail-btm img:hover {
+    display: none;
+  }
+
   .btn-events-btm a {
     border: 3px solid #fff;
     font-size: 31px;
   }
 
   .btn-events-btm img {
+    max-width: 31px;
+    margin: 0 33px 0 21px;
+  }
+
+  .btn-cocktail-btm {
+    padding-top: 49px;
+    padding-bottom: 60px;
+  }
+
+  .btn-cocktail-btm a {
+    border: 3px solid #000;
+    font-size: 31px;
+  }
+
+  .btn-cocktail-btm img {
     max-width: 31px;
     margin: 0 33px 0 21px;
   }
