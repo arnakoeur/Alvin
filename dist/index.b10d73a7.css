@@ -5064,6 +5064,7 @@ header {
 }
 
 .bg-img {
+  width: 100%;
   background-color: #000;
   background-image: url("bar-alvin-photo.66a3793a.webp");
 }
@@ -5244,6 +5245,51 @@ nav a:hover {
   border-color: red;
 }
 
+footer {
+  background-color: #000;
+}
+
+.contact-title {
+  padding: 36px 0 40px;
+}
+
+.footer-links {
+  color: #fff;
+  padding-bottom: 40px;
+}
+
+.footer-links a {
+  font-family: helvetica-neue;
+  font-size: 27px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer-links .icons {
+  padding-right: 10px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  color: #fff;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  display: flex;
+}
+
+.footer-copyright a {
+  font-family: helvetica-neue-light;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
 @media screen and (min-width: 769px) {
   .intro {
     font-size: 45px;
@@ -5313,7 +5359,7 @@ nav a:hover {
   }
 
   .btn-cocktail-btm {
-    padding-top: 49px;
+    padding-top: 135px;
     padding-bottom: 60px;
   }
 
@@ -5326,11 +5372,46 @@ nav a:hover {
     max-width: 31px;
     margin: 0 33px 0 21px;
   }
+
+  .cocktail-bottom-sm, .cocktail-bottom-lg {
+    border-bottom: 3px solid #000;
+  }
+
+  .footer-copyright a {
+    padding-top: 30px;
+    font-size: 21px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     display: none;
+  }
+
+  .cocktail-bottom-sm {
+    border-bottom: 3px solid #000;
+  }
+
+  .btn-cocktail-btm {
+    padding-top: 75px;
+    padding-bottom: 60px;
+  }
+
+  .footer-copyright {
+    padding-bottom: 20px;
+  }
+
+  .burger-open {
+    background-color: #000;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    top: 65px;
+    right: 0%;
+  }
+
+  .burger-open a {
+    padding: 20px;
   }
 }
 

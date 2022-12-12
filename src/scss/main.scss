@@ -78,6 +78,7 @@ header {
 .bg-img {
   background-image: url(../img/bar-alvin-photo.webp);
   background-color: black;
+  width: 100%;
 }
 
 .bg-blur {
@@ -260,6 +261,52 @@ nav {
   background-color: red;
 }
 
+footer {
+  background-color: black;
+}
+
+.contact-title {
+  padding: 36px 0px 40px 0px;
+}
+
+.footer-links {
+  color: white;
+  padding-bottom: 40px;
+
+  a{
+    font-family: helvetica-neue;
+    font-size: 27px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .icons {
+    padding-right: 10px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-copyright {
+  color: white;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  a{
+    font-family: helvetica-neue-light;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+
 /* ====================================
 // base rules
 // ==================================== */
@@ -288,72 +335,113 @@ nav {
   .in-header {
     display: block;
   }
-
+  
   .event-title {
     font-size: 93px;
     padding: 68px 0px 68px 0px;
   }
-
+  
   .cocktail-title {
     font-size: 93px;
     padding: 68px 0px 16px 0px;
   }
-
+  
   .date-title {
     font-size: 26px;
   }
-
+  
   .event-card-title {
     font-size: 45px;
   }
-
+  
   .event-card-text {
     font-size: 28px;
   }
-
+  
   .btn-events-btm {
     padding-top: 49px;
     padding-bottom: 60px;
   }
-
+  
   .btn-cocktail-btm a:hover {
     border-color: red;
     background-color: red;
     color: white;
   }
-
+  
   .btn-cocktail-btm img:hover {
     display: none;
   }
-
+  
   .btn-events-btm a {
     font-size: 31px;
     border: solid 3px white;
   }
-
+  
   .btn-events-btm img {
     max-width: 31px;
     margin: 0px 33px 0px 21px;
   }
-
+  
   .btn-cocktail-btm {
-    padding-top: 49px;
+    padding-top: 135px;
     padding-bottom: 60px;
   }
-
+  
   .btn-cocktail-btm a {
     font-size: 31px;
     border: solid 3px black;
   }
-
+  
   .btn-cocktail-btm img {
     max-width: 31px;
     margin: 0px 33px 0px 21px
+  }
+  
+  .cocktail-bottom-sm {
+    border-bottom: solid 3px black;
+  }
+  
+  .cocktail-bottom-lg {
+    border-bottom: solid 3px black;
+  }
+  
+  .footer-copyright {
+    a{
+      font-size: 21px;
+      padding-top: 30px;
+    }
   }
 }
 
 @media screen and (max-width: 768px) {
   nav {
     display: none;
+  }
+  
+  .cocktail-bottom-sm {
+    border-bottom: solid 3px black;
+  }
+  
+  .btn-cocktail-btm {
+    padding-top: 75px;
+    padding-bottom: 60px;
+  }
+  
+  .footer-copyright {
+    padding-bottom: 20px;
+  }
+
+  .burger-open {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0%;
+  
+    a {
+      padding: 20px;
+    }
   }
 }
