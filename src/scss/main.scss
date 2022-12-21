@@ -8,18 +8,18 @@
 // ==================================== */
 
 @font-face {
-  font-family: 'helvetica-neue';
-  src:  url(/src/HelveticaNeue-01.woff2) format('woff2')
+  font-family: "helvetica-neue";
+  src: url(/src/HelveticaNeue-01.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'helvetica-neue-light';
-  src:  url(/src/HelveticaNeue-Light-08.woff2) format('woff2')
+  font-family: "helvetica-neue-light";
+  src: url(/src/HelveticaNeue-Light-08.woff2) format("woff2");
 }
 
 @font-face {
-  font-family: 'fa-sharp';
-  src:  url(/src/fa-sharp-solid-900.woff2) format('woff2')
+  font-family: "fa-sharp";
+  src: url(/src/fa-sharp-solid-900.woff2) format("woff2");
 }
 
 * {
@@ -74,6 +74,28 @@ header {
 
 .logo-grand {
   width: 100%;
+}
+
+.defiling-text {
+  border-top: solid 3px black;
+  border-bottom: solid 3px black;
+  display: flex;
+  overflow: hidden;
+  font-family: helvetica-neue;
+
+  .animation {
+    animation: slide-right 3s linear infinite;
+    white-space: nowrap;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10%);
+  }
 }
 
 .bg-img {
@@ -214,7 +236,7 @@ nav {
   text-align: center;
   padding-top: 28px;
   padding-bottom: 60px;
-  
+
   a {
     border: solid 1px white;
     display: inline-flex;
@@ -235,7 +257,7 @@ nav {
   text-align: center;
   padding-top: 28px;
   padding-bottom: 60px;
-  
+
   a {
     border: solid 1px black;
     display: inline-flex;
@@ -274,7 +296,7 @@ footer {
   color: white;
   padding-bottom: 40px;
 
-  a{
+  a {
     font-family: helvetica-neue;
     font-size: 27px;
     font-weight: 400;
@@ -296,7 +318,7 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  a{
+  a {
     font-family: helvetica-neue-light;
     font-size: 12px;
     text-decoration: none;
@@ -307,7 +329,6 @@ footer {
   }
 }
 
-
 /* ====================================
 // base rules
 // ==================================== */
@@ -316,99 +337,99 @@ footer {
   .intro {
     font-size: 45px;
   }
-  
+
   .intro-title {
     font-size: 20px;
   }
-  
+
   .philosophy-intro {
     padding: 168px 0px;
   }
-  
+
   .small-header-logo {
     display: none;
   }
-  
+
   .small-header-burger {
     display: none;
   }
-  
+
   .in-header {
     display: block;
   }
-  
+
   .event-title {
     font-size: 93px;
     padding: 68px 0px 68px 0px;
   }
-  
+
   .cocktail-title {
     font-size: 93px;
     padding: 68px 0px 16px 0px;
   }
-  
+
   .date-title {
     font-size: 26px;
   }
-  
+
   .event-card-title {
     font-size: 45px;
   }
-  
+
   .event-card-text {
     font-size: 28px;
   }
-  
+
   .btn-events-btm {
     padding-top: 49px;
     padding-bottom: 60px;
   }
-  
+
   .btn-cocktail-btm a:hover {
     border-color: red;
     background-color: red;
     color: white;
   }
-  
+
   .btn-cocktail-btm img:hover {
     display: none;
   }
-  
+
   .btn-events-btm a {
     font-size: 31px;
     border: solid 3px white;
   }
-  
+
   .btn-events-btm img {
     max-width: 31px;
     margin: 0px 33px 0px 21px;
   }
-  
+
   .btn-cocktail-btm {
     padding-top: 135px;
     padding-bottom: 60px;
   }
-  
+
   .btn-cocktail-btm a {
     font-size: 31px;
     border: solid 3px black;
   }
-  
+
   .btn-cocktail-btm img {
     max-width: 31px;
-    margin: 0px 33px 0px 21px
+    margin: 0px 33px 0px 21px;
   }
-  
+
   .cocktail-bottom-sm {
     border-bottom: solid 3px black;
   }
-  
+
   .cocktail-bottom-lg {
     border-bottom: solid 3px black;
   }
-  
+
   .footer-copyright {
-    a{
+    a {
       font-size: 21px;
       padding-top: 30px;
     }
@@ -419,16 +440,16 @@ footer {
   nav {
     display: none;
   }
-  
+
   .cocktail-bottom-sm {
     border-bottom: solid 3px black;
   }
-  
+
   .btn-cocktail-btm {
     padding-top: 75px;
     padding-bottom: 60px;
   }
-  
+
   .footer-copyright {
     padding-bottom: 20px;
   }
@@ -440,7 +461,7 @@ footer {
     position: absolute;
     top: 65px;
     right: 0%;
-  
+
     a {
       padding: 20px;
     }

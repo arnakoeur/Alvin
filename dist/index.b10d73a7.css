@@ -5064,6 +5064,29 @@ header {
   width: 100%;
 }
 
+.defiling-text {
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  font-family: helvetica-neue;
+  display: flex;
+  overflow: hidden;
+}
+
+.defiling-text .animation {
+  white-space: nowrap;
+  animation: slide-right 3s linear infinite;
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-10%);
+  }
+}
+
 .bg-img {
   width: 100%;
   background-color: #000;
